@@ -58,3 +58,10 @@ keymap.set("n", "<S-Tab>", ":bprevious<CR>", { desc = "Previous buffer" })
 
 -- Inc-rename
 keymap.set("n", "<leader>rn", ":IncRename ")
+
+-- Format all
+keymap.set("n", "<leader>f", vim.lsp.buf.format)
+
+-- moves
+keymap.set("n", "<C-d>", "<C-d>zz")
+keymap.set("n", "<C-u>", "<C-u>zz")
