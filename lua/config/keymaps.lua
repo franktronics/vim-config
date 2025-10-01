@@ -1,7 +1,6 @@
 -- Keymaps are automatically loaded on the VeryLazy event
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any a dditional keymaps here 0
---
 
 local keymap = vim.keymap
 local opts = { noremap = true, silent = true }
@@ -53,14 +52,18 @@ keymap.set("n", "<C-S-h>", "<C-w><")
 keymap.set("n", "<C-S-l>", "<C-w>>")
 keymap.set("n", "<C-S-k>", "<C-w>+")
 keymap.set("n", "<C-S-j>", "<C-w>-")
+
+-- Buffers
 keymap.set("n", "<Tab>", ":bnext<CR>", { desc = "Next buffer" })
 keymap.set("n", "<S-Tab>", ":bprevious<CR>", { desc = "Previous buffer" })
+keymap.set("n", "<F13>", "<cmd>Telescope buffers<CR><Esc>", { desc = "Open buffers list" })
+keymap.set("n", "<F13><F13>", "<cmd>w|bd<CR>", { desc = "Close this buffer" })
 
 -- Inc-rename
 keymap.set("n", "<leader>rn", ":IncRename ")
 
 -- Format all
-keymap.set("n", "<leader>f", vim.lsp.buf.format)
+keymap.set("n", "<leader>f", vim.lsp.buf.format, { desc = "Format all" })
 
 -- moves
 keymap.set("n", "<C-d>", "<C-d>zz")
