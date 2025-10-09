@@ -59,6 +59,9 @@ keymap.set("n", "<S-Tab>", ":bprevious<CR>", { desc = "Previous buffer" })
 keymap.set("n", "<F13>", "<cmd>Telescope buffers<CR><Esc>", { desc = "Open buffers list" })
 keymap.set("n", "<F13><F13>", "<cmd>w|bd<CR>", { desc = "Close this buffer" })
 
+-- Grep
+keymap.set("n", "<F12>", "<cmd>Telescope live_grep<CR>", { desc = "Live Grep" })
+
 -- Inc-rename
 keymap.set("n", "<leader>rn", ":IncRename ")
 

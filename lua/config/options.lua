@@ -19,6 +19,7 @@ vim.opt.shiftwidth = 2
 vim.opt.tabstop = 2
 vim.opt.smarttab = true
 vim.opt.breakindent = true
+vim.opt.wrap = true
 
 vim.opt.hlsearch = true
 vim.opt.inccommand = "split"
