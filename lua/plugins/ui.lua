@@ -1,47 +1,7 @@
 return {
   {
-    "folke/noice.nvim",
-    event = "VeryLazy",
-    opts = {
-      lsp = {
-        progress = { enabled = true },
-        hover = { enabled = true, focusable = true },
-        signature = { enabled = true, focusable = true },
-      },
-      presets = {
-        bottom_search = false, -- use a classic bottom cmdline for search
-        command_palette = true, -- position the cmdline and popupmenu together
-        long_message_to_split = true, -- long messages will be sent to a split
-        inc_rename = true, -- enables an input dialog for inc-rename.nvim
-        lsp_doc_border = true, -- add a border to hover docs and signature help
-      },
-    },
-    dependencies = {
-      "MunifTanjim/nui.nvim",
-      "rcarriga/nvim-notify",
-    },
-    config = function(_, opts)
-      require("noice").setup(opts)
-      vim.api.nvim_set_hl(0, "FloatBorder", { fg = "#E66A61", bg = "NONE" })
-    end,
-  },
-  {
-    "rcarriga/nvim-notify",
-    opts = {
-      timeout = 10000,
-    },
-  },
-  {
     "akinsho/bufferline.nvim",
-    event = "VeryLazy",
-    opts = {
-      options = {
-        mode = "buffers",
-        show_buffer_close_icons = false,
-        show_close_icon = false,
-        always_show_bufferline = false,
-      },
-    },
+    enabled = false,
   },
   { "nvim-tree/nvim-web-devicons", opts = {} },
   {

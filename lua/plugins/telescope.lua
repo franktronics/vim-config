@@ -57,7 +57,6 @@ return {
       
       opts.pickers = opts.pickers or {}
       opts.pickers.buffers = {
-        theme = "dropdown",
         initial_mode = "normal",
         mappings = {
           n = {
