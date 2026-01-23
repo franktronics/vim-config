@@ -30,3 +30,5 @@ vim.opt.ignorecase = true
 vim.opt.scrolloff = 10
 vim.opt.splitbelow = true
 vim.opt.splitright = true
+
+vim.opt.swapfile = false

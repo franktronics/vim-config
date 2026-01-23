@@ -1,5 +1,6 @@
 local keymap = vim.keymap
 local buffer_manager = require("config.buffer_manager")
+local ls = require("luasnip")
 
 -- Increment/Decrement
 keymap.set("n", "+", "<C-a>", { desc = "Increment" })

@@ -1,0 +1,21 @@
+{
+  "React Functional Component with Props": {
+    "prefix": "rcomp",
+    "body": [
+      "import { type ComponentProps } from \"react\"",
+      "",
+      "export type ${1:Prefix}Props = {",
+      "} & ComponentProps<\"${2:div}\">",
+      "",
+      "export const ${1:Prefix} = (props: ${1:Prefix}Props) => {",
+      "  const { ...rest } = props",
+      "  return (",
+      "    <${2:div} {...rest}>",
+      "      $0",
+      "    </${2:div}>",
+      "  )",
+      "}"
+    ],
+    "description": "React Functional Component with Props"
+  }
+}
