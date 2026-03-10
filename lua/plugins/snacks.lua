@@ -11,12 +11,15 @@ return {
             hidden = true,
             ignored = false,
           },
+          explorer = {
+            hidden = true,
+            ignored = true,
+            auto_close = false,
+          },
         },
       },
       explorer = {
         enabled = true,
-        hidden = true,
-        auto_close = false,
         replace_netrw = false,
       },
     },
